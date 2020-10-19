@@ -56,8 +56,14 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+
 }
 
 img{
     width : 550px;
+}
+
+.summary{
+    font-size: 1.5em;
+    color : #ffffff;
 }
