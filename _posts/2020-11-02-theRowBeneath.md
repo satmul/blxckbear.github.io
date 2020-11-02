@@ -23,7 +23,7 @@ Lets run binwalk to make sure it is a JPEG, yep it's a JPEG file.
 I looked the title of the challenge : **The Row Beneath**, so the creator means there's flag on the bottom row of the flag.
 So i just ran HXD to check the hex values, or you can run strings commands and the flag is there!
 
-![](/image/cyberYoddha/flagPlan.PNG)
+![](/image/cyberYoddha/flagPlan.png)
 
 Fin!
 
