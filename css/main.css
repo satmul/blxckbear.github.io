@@ -60,10 +60,16 @@ ul.posts li {
 }
 
 img{
-    width : 550px;
+    width : 500px;
 }
 
 .summary{
     font-size: 1.5em;
     color : #ffffff;
+}
+
+div.post{
+   
+    margin-right: 150px;
+    margin-left: 80px;
 }
