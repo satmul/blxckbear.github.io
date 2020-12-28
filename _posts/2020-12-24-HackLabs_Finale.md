@@ -4,10 +4,10 @@ title: "Hacklabs Finale Week - Writeup"
 date: 2020-12-24
 ---
 
-![small](/image/hacklabs.jpg)
-
 Hi there, this is the writeup for my final week. Join the Discord server (links on HackLabs Instagram account) **[Click Here](https://www.instagram.com/hacklabs.id/)**. Lets get started !
 *note : I'm new in CTF :D
+
+![small](/image/hacklabs.jpg)
 
 ## Incremental Crunchy Cracker - Forensics
 
