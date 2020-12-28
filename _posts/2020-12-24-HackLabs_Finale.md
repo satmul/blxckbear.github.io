@@ -13,19 +13,19 @@ Given a protected .zip file with some password hint (is digit) and the title is 
 
 So i convert the zip into hash with zip2john.
 
-![large](/image/HackLabsFinale/increment1.png)
+![large](/image/HacklabsFinale/increment1.png)
 
 And crack the hash with Incremental mode with John,
 
-![large](/image/HackLabsFinale/increment2.png)
+![large](/image/HacklabsFinale/increment2.png)
 
 I got the password of the zip : 9489484
 
-![large](/image/HackLabsFinale/increment3.png)
+![large](/image/HacklabsFinale/increment3.png)
 
 Extract it with the password, and this is the flag : 
 
-![med](/image/HackLabsFinale/increment4.png)
+![med](/image/HacklabsFinale/increment4.png)
 
 
 **Flag** : HACKLABS{anjay_gurih_beut_crackernya}
@@ -36,23 +36,23 @@ Extract it with the password, and this is the flag :
 Given .xlsm file with macro inside it, to see the source code of the macro press (alt+f11).
 When i click the first box it returns the first part of the flag : HACKLABS{, then i click the second box and the macro wants a password but i dont know the password yet.
 
-![challDesc](/image/HackLabsFinale/marco1.png)
+![challDesc](/image/HacklabsFinale/marco1.png)
 
 macro source code, password for the second box is : sumimasen_4669. If i input the correct password it will return a "ROTTED" string. Lets try to rotate it with ROT47. The result is : m4lware_m4cro_iz_ and this is the second part of the flag.
 
-![med](/image/HackLabsFinale/marco2.png)
+![med](/image/HacklabsFinale/marco2.png)
 
 For the last part, macro will request an input from user. If input is true then sheet2 will available.
 
-![med](/image/HackLabsFinale/marco3.png)
+![med](/image/HacklabsFinale/marco3.png)
 
 In the sheet2 i can't find the flag right away. So i just find the "}" because i think the last part of the flag is in sheet2 but it's hidden.
 
-![challDesc](/image/HackLabsFinale/marco4.png)
+![challDesc](/image/HacklabsFinale/marco4.png)
 
 Last part of the flag :
 
-![med](/image/HackLabsFinale/marco5.png)
+![med](/image/HacklabsFinale/marco5.png)
 
 **Flag** : HACKLABS{m4lware_m4cro_iz_very_deadb33f}
 
@@ -62,15 +62,15 @@ Given a video from Sherpa youtube channel. In this chall i need to find the exac
 
 So i took a screenshot and reverse search the image with yandex or google reverse image. 
 
-![challDesc](/image/HackLabsFinale/sherpa1.png)
+![challDesc](/image/HacklabsFinale/sherpa1.png)
 
 There is a big red building and small white building. I need to find what the name of the building.
 
-![](/image/HackLabsFinale/sherpa2.png)
+![](/image/HacklabsFinale/sherpa2.png)
 
 The red building name is Fistral Outlook Hotel. Lets find where is it exactly. I look on google earth (Towan Headland) to see the satelite view and i got the Fistral Outlook Hotel and the white building.
 
-![](/image/HackLabsFinale/sherpa3.png)
+![](/image/HacklabsFinale/sherpa3.png)
 
 **Flag** : HACKLABS{Towan_Headland}
 
@@ -86,20 +86,20 @@ Encrypted header : 15 5F 43 17 80 60 D1 6B
 Correct .png header : 89 50 4E 47 0D 0A 1A 0A
 Result : 9C 0F 0D 50 8D 6A CB 61
 
-![](/image/HackLabsFinale/xor1.png)
+![](/image/HacklabsFinale/xor1.png)
 
 Then XOR the encrypted image with the previous result with cyberchef :3
 It shows a correct .png file! lets see what's inside it.
 
-![](/image/HackLabsFinale/xor2.png)
+![](/image/HacklabsFinale/xor2.png)
 
 A Github logo? Im curious if HackLabs have a github account, lets see.
 
-![small](/image/HackLabsFinale/xor3.png)
+![small](/image/HacklabsFinale/xor3.png)
 
 After i visited the Hacklabs's github account, there's a folder that contains this challenge flag but it's a fake flag. Github have some features to see what's been changed recently.
 
-![](/image/HackLabsFinale/xor4.png)
+![](/image/HacklabsFinale/xor4.png)
 
 **Flag** : HACKLABS{W3_H4v3_a_g1THuB_p4G3_t0_y0U_kN0w}
 
@@ -108,19 +108,19 @@ After i visited the Hacklabs's github account, there's a folder that contains th
 
 Given a "shredded" .jpg file. I tried to unshred the image with Photoshop. After reassembling the shredded image it returns a fake flag :<.
 
-![challDesc](/image/HackLabsFinale/shredded.jpg)
+![challDesc](/image/HacklabsFinale/shredded.jpg)
 
-![challDesc](/image/HackLabsFinale/solveShredded.png)
+![challDesc](/image/HacklabsFinale/solveShredded.png)
 
 So i found a similar challenge "Warpspeed". If .jpg is resized it will be "shredded" and if its a .png file it will corrupt the file. *thanks to Felix (he told me after i solved this challenge)
 
 Lets change the image size with hex editor.
 
-![challDesc](/image/HackLabsFinale/shreddedSize.jpg)
+![challDesc](/image/HacklabsFinale/shreddedSize.jpg)
 
 After bruteforcing the image size, i found the flag on the bottom of the image !
 
-![challDesc](/image/HackLabsFinale/shreddedFlag.jpg)
+![challDesc](/image/HacklabsFinale/shreddedFlag.jpg)
 
 **Flag** : HACKLABS{hmm_kok_pecah_ya_gan}
 
@@ -130,11 +130,11 @@ After bruteforcing the image size, i found the flag on the bottom of the image !
 Given .pcap file, I tried to inspect all the protocols that available in this file. ICMP protocol seems good to me, i can see ping request with some data. 
 *I'm inspired by this [**Writeup**](https://scgajge12.blogspot.com/2019/02/for-ctf-beginners-network-2scapy.html)
 
-![challDesc](/image/HackLabsFinale/pipe1.png)
+![challDesc](/image/HacklabsFinale/pipe1.png)
 
 Then i use the script to get the data from ICMP protocol and it returns a Base64 encoded strings, just decode that string with online tools or base64 -d in Linux terminal.
 
-![large](/image/HackLabsFinale/pipe2.png)
+![large](/image/HacklabsFinale/pipe2.png)
 
 **Flag** : HACKLABS{icmp_exfiltration_is_annoying}
 
@@ -142,39 +142,39 @@ Then i use the script to get the data from ICMP protocol and it returns a Base64
 
 Back again with another zip cracking challenge, given a hint that the first password of the first zip is phone number with XL operator (11 digits). Lets make the wordlist with crunch and crack the zip with John.
 
-![](/image/HackLabsFinale/antag1.png)
+![](/image/HacklabsFinale/antag1.png)
 
-![](/image/HackLabsFinale/antag2.png)
+![](/image/HacklabsFinale/antag2.png)
 
 1st zip password : 08781337696
 
-![](/image/HackLabsFinale/antag3.png)
+![](/image/HacklabsFinale/antag3.png)
 
 Unzip the 1st zip and i got the 1st part of the flag with hints for cracking the 2nd part.
 
-![](/image/HackLabsFinale/antag4.png)
+![](/image/HacklabsFinale/antag4.png)
 
 Time to make the wordlist based on regex with exrex.py and repeat the previous steps.
 
-![](/image/HackLabsFinale/antag5.png)
+![](/image/HacklabsFinale/antag5.png)
 
 2nd zip password : 3n_s484h_n03R
 
-![](/image/HackLabsFinale/antag6.png)
+![](/image/HacklabsFinale/antag6.png)
 
 I got the 2nd part of the flag and the hints, repeat the steps again :c
 
-![](/image/HackLabsFinale/antag7.png)
+![](/image/HacklabsFinale/antag7.png)
 
-![](/image/HackLabsFinale/antag8.png)
+![](/image/HacklabsFinale/antag8.png)
 
 last zip password : bl00d_&_bones
 
-![](/image/HackLabsFinale/antag9.png)
+![](/image/HacklabsFinale/antag9.png)
 
 last part of the flag 
 
-![](/image/HackLabsFinale/antag10.png)
+![](/image/HacklabsFinale/antag10.png)
 
 **Flag** : HACKLABS{th3_r3gx_pr0digy_let_s_praize_hail_hannibal_th3_p0ligl0sint}
 
