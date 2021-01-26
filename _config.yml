@@ -7,4 +7,8 @@ kramdown:
   syntax_highliter: rouge
 
 
-theme: jekyll-theme-cayman
+theme: jekyll-theme-hacker
+
+
+title: Skiddies101
+description: Writeup Page
